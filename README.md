@@ -81,13 +81,6 @@ systemctl restart docker &&  systemctl  enable docker
 ```
 yum install git
 ```
-##  安装kind
-
-```
-go get sigs.k8s.io/kind 
-
-kind create cluster
-```
 
 ## 安装kubectl
 
@@ -103,6 +96,18 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 EOF
 yum install -y kubectl
 ```
+
+##  安装kind
+
+```
+go get sigs.k8s.io/kind 
+
+kind create cluster
+```
+
+
+
+
 
 
 reference:
