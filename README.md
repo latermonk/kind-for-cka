@@ -7,7 +7,7 @@
 
 ### 安装golang
 ```
-yum install golang
+yum install -y golang
 
 go version
 
@@ -43,7 +43,7 @@ cd /etc/yum.repo
 
 wget  https://download.docker.com/linux/centos/docker-ce.repo
 
-yum install docker-ce
+yum install -y docker-ce
 ```
 ####  方法二：
 ```
@@ -79,7 +79,7 @@ systemctl restart docker &&  systemctl  enable docker
 
 
 ```
-yum install git
+yum install -y git
 ```
 
 ## 安装kubectl
