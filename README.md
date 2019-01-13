@@ -120,7 +120,20 @@ go get sigs.k8s.io/kind
 kind create cluster
 ```
 
+##  shell补全
 
+
+```
+source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
+echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+```
+
+##  集群测试
+
+
+```
+kubectl cluster-info
+```
 
 
 
