@@ -120,13 +120,35 @@ go get sigs.k8s.io/kind
 kind create cluster
 ```
 
+找不到kind：
+
+```
+添加
+export PATH=$PATH:/root/go/bin
+到.bashrc
+
+```
+
+
+
 ##  shell补全
 
+### shell补全
+
+### kubectl补全
 
 ```
 source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
 echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
 ```
+## 设置配置文件
+
+```
+export KUBECONFIG="$(kind get kubeconfig-path --name="1")"
+
+
+```
+
 
 ##  集群测试
 
@@ -134,6 +156,12 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permane
 ```
 kubectl cluster-info
 ```
+
+## 集群创建指南
+
+创建
+删除
+...
 
 
 
