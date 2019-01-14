@@ -22,14 +22,14 @@ go version
 
 
 ```
-mkdir $HOME/gowork
+mkdir $HOME/go
 
-vim ~/.profile
+vim ~/.bashrc
 
-export GOPATH=$HOME/gowork 
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-source $HOME/.profile
+. $HOME/.bashrc
 
 ```
 ###  检查环境
