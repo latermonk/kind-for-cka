@@ -44,7 +44,7 @@ go env
 ####  方法一：
 
 ```
-cd /etc/yum.repo
+/etc/yum.repos.d
 
 wget  https://download.docker.com/linux/centos/docker-ce.repo
 
