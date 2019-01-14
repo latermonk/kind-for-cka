@@ -5,6 +5,11 @@
 
 ##  go环境搭建
 
+###
+```
+yum -y install bash-completion
+```
+
 ### 安装golang
 ```
 yum install -y golang
