@@ -164,10 +164,12 @@ kubectl cluster-info
 
 ## 集群创建指南
 
-创建
-删除
-...
+创建   
+删除    
+...    
 
+参考：
+https://github.com/kubernetes-sigs/kind/tree/master/docs/user
 
 
 
