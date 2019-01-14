@@ -127,6 +127,7 @@ kind create cluster
 
 找不到kind：
 
+错误方法
 ```
 添加
 export PATH=$PATH:/root/go/bin
@@ -134,7 +135,12 @@ export PATH=$PATH:/root/go/bin
 
 ```
 
-
+正确方法：
+在配置go环境变量的时候就设置好路径$PATH
+```
+export GOPATH=/root/go
+export PATH=$PATH:$GOPATH/bin
+```
 
 ##  shell补全
 
