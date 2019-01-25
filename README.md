@@ -1,6 +1,23 @@
 # kind-for-cka
 
 
+
+
+#  zsh and oh my zsh installation:
+
+```
+yum -y install zsh
+
+chsh -s /bin/zsh
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+or 
+
+ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
+
 #  CentOS 7
 
 ##  go环境搭建
@@ -31,6 +48,7 @@ go version
 mkdir $HOME/go
 
 vim ~/.bashrc
+#vim ~/.zshrc
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -205,19 +223,6 @@ reference:
 https://github.com/kubernetes-sigs/kind
 
 
-#  zsh and oh my zsh installation:
-
-```
-yum -y install zsh
-
-chsh -s /bin/zsh
-
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-or 
-
- sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-```
 
 
 
