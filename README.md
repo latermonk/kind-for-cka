@@ -11,6 +11,12 @@ yum -y install bash-completion
 ```
 
 ### 安装golang
+
+install epel-release if needed !!!
+```
+yum -y install epel-release
+```
+
 ```
 yum install -y golang
 
