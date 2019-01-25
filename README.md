@@ -154,10 +154,26 @@ export PATH=$PATH:$GOPATH/bin
 
 ### kubectl补全
 
+####  bash
 ```
 source <(kubectl completion bash) 
 echo "source <(kubectl completion bash)" >> ~/.bashrc 
 ```
+
+####  zsh
+
+```
+source <(kubectl completion zsh)
+```
+
+
+edit .zshrc and add the following lines
+```
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+```
+
 ## 设置配置文件
 
 ```
@@ -187,6 +203,21 @@ https://github.com/kubernetes-sigs/kind/tree/master/docs/user
 
 reference:
 https://github.com/kubernetes-sigs/kind
+
+
+#  zsh and oh my zsh installation:
+
+```
+yum -y install zsh
+
+chsh -s /bin/zsh
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+or 
+
+ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
 
 
 
