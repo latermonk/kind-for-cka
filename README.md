@@ -233,13 +233,17 @@ kubectl cluster-info
 # .zshrc中写入的内容
 
 ```
-
+#go env setup
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+#kubectl completion
 if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
 export KUBECONFIG="$(kind get kubeconfig-path --name="1")"
+
+#kubeclt alias
 alias k=kubectl
 
 ```
