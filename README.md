@@ -230,6 +230,21 @@ kubectl cluster-info
 删除    
 ...    
 
+# .zshrc中写入的内容
+
+```
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+export KUBECONFIG="$(kind get kubeconfig-path --name="1")"
+alias k=kubectl
+
+```
+
+
 参考：
 https://github.com/kubernetes-sigs/kind/tree/master/docs/user
 
