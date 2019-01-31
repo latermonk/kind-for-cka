@@ -85,7 +85,7 @@ curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
 
-###  配置国内源
+###  配置国内源【并非完全必要】
 
 ```
 mkdir  /etc/docker
