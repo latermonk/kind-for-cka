@@ -5,10 +5,14 @@
 
 #  zsh and oh my zsh installation:
 
+
+
 ```
 yum -y install zsh
 
 chsh -s /bin/zsh
+
+yum install -y git
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -104,12 +108,7 @@ systemctl restart docker &&  systemctl  enable docker
 ```
 
 
-##  安装其它工具
 
-
-```
-yum install -y git
-```
 
 ## 安装kubectl
 
