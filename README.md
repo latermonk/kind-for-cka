@@ -155,6 +155,12 @@ gpgkey=http://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg
 EOF
 ```
 
+安装kubectl
+```
+yum -y install kubectl
+
+```
+
 
 ##  安装kind
 
