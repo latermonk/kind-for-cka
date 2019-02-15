@@ -216,7 +216,8 @@ fi
 ## 设置配置文件
 
 ```
-export KUBECONFIG="$(kind get kubeconfig-path --name="1")"
+
+export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
 
 
 ```
@@ -246,7 +247,8 @@ export PATH=$PATH:$GOPATH/bin
 if [ $commands[kubectl] ]; then
   source <(kubectl completion zsh)
 fi
-export KUBECONFIG="$(kind get kubeconfig-path --name="1")"
+
+export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
 
 #kubeclt alias
 alias k=kubectl
