@@ -1,6 +1,25 @@
 # kind-for-cka
 
 
+# need more than 1 node ?
+
+https://kind.sigs.k8s.io/docs/user/quick-start/#configuring-your-kind-cluster
+
+kind create cluster --config --config-file
+
+where config-file:
+
+```
+# three node (two workers) cluster config
+kind: Config
+apiVersion: kind.sigs.k8s.io/v1alpha2
+nodes:
+- role: control-plane
+- role: worker
+  replicas: 2
+  
+```
+
 
 
 #  zsh and oh my zsh installation:
