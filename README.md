@@ -5,7 +5,7 @@
 
 https://kind.sigs.k8s.io/docs/user/quick-start/#configuring-your-kind-cluster
 
-kind create cluster --config --config-file
+kind create cluster --config  config-file
 
 where config-file:
 
