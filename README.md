@@ -3,9 +3,16 @@
 
 # need more than 1 node ?
 
+
 https://kind.sigs.k8s.io/docs/user/quick-start/#configuring-your-kind-cluster
 
+
+```
+wget https://raw.githubusercontent.com/latermonk/kind-for-cka/master/config/multi-node-cluster.conf
+
 kind create cluster --config  config-file
+
+```
 
 where config-file:
 
