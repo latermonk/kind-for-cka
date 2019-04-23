@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "Begin .... "
+echo "========00000000000000000000000000== Begin ==00000000000000000000000000000000000========="
 sudo -i
 
 # add rpm source 
@@ -16,9 +17,14 @@ mkdir $HOME/go
 
 # vim ~/.zshrc
 echo "export GOPATH=$HOME/go" >>  ~/.bashrc
-echo “export PATH=$PATH:$GOPATH/bin” >>  ~/.bashrc
+echo "export PATH=$PATH:$GOPATH/bin" >>  ~/.bashrc
 
 . $HOME/.bashrc
+
+
+
+# Install docker && kubectl
+echo "========00000000000000000000000000==  Install docker && kubectl ==00000000000000000000000000000000000========="
 
 cd /etc/yum.repos.d
 wget  https://download.docker.com/linux/centos/docker-ce.repo
@@ -38,18 +44,24 @@ EOF
 
 yum -y install kubectl
 
+
+
+
 echo "========11111111111111========="
 #. $HOME/.bashrc
 echo "========22222222222222========="
 
 # Download and config the cluster
+
+echo "========00000000000000000000000000==  Download and config the cluster ==00000000000000000000000000000000000========="
 go get sigs.k8s.io/kind 
 
 echo "export PATH=$PATH:/root/go/bin" >> $HOME/.bashrc
-
-#yum -y install source
 
 . $HOME/.bashrc
 
 
 kind create cluster
+
+
+echo "========00000000000000000000000000==  The End , try kubectl get nodes , Now !!! ==00000000000000000000000000000000000========="
