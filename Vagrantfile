@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "centos/7"
+  config.vm.box_check_update = false
 
 
   config.ssh.insert_key = false
@@ -22,7 +23,7 @@ Vagrant.configure("2") do |config|
   config.ssh.private_key_path = ['C:\\Users\grgbanking\\.vagrant.d\\insecure_private_key']
 
 
-  config.vm.box_check_update = false
+
 
 
 
