@@ -16,11 +16,18 @@ Vagrant.configure("2") do |config|
 
 
   config.ssh.insert_key = false
-  config.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key', '~/.ssh/id_rsa']
-  # Disable automatic box update checking. If you disable this, then
-  # boxes will only be checked for updates when the user runs
-  # `vagrant box outdated`. This is not recommended.
+  # Linux
+  #config.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key']
+  # Win
+  config.ssh.private_key_path = ['C:\\Users\grgbanking\\.vagrant.d\\insecure_private_key']
+
+
   config.vm.box_check_update = false
+
+
+
+  config.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh", disabled: "true"
+  config.vm.network "forwarded_port", guest: 22, host: 8989
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,

@@ -2,22 +2,23 @@
 echo "Begin .... "
 sudo -i
 
-yum -y install zsh
-chsh -s /bin/zsh
-yum install -y git
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-yum -y install bash-completion
+# add rpm source 
 yum -y install epel-release
-yum install -y golang
+
+
+yum -y install git
+yum -y install bash-completion
+yum -y install  golang
+
 go version
 
 mkdir $HOME/go
 
 # vim ~/.zshrc
-echo "export GOPATH=$HOME/go" >>  ~/.zshrc
-echo “export PATH=$PATH:$GOPATH/bin” >>  ~/.zshrc
+echo "export GOPATH=$HOME/go" >>  ~/.bashrc
+echo “export PATH=$PATH:$GOPATH/bin” >>  ~/.bashrc
 
-. $HOME/.zshrc
+. $HOME/.bashrc
 
 cd /etc/yum.repos.d
 wget  https://download.docker.com/linux/centos/docker-ce.repo
@@ -32,25 +33,23 @@ enabled=1
 gpgcheck=0
 repo_gpgcheck=0
 gpgkey=http://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg
-        http://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
+http://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
 EOF
 
 yum -y install kubectl
 
+echo "========11111111111111========="
+#. $HOME/.bashrc
+echo "========22222222222222========="
 
-. $HOME/.zshrc
-
-
-
-
-
+# Download and config the cluster
 go get sigs.k8s.io/kind 
 
-echo "export PATH=$PATH:/root/go/bin" >> $HOME/.zshrc
+echo "export PATH=$PATH:/root/go/bin" >> $HOME/.bashrc
 
-yum -y install source
+#yum -y install source
 
-. $HOME/.zshrc
+. $HOME/.bashrc
 
 
 kind create cluster
