@@ -29,7 +29,11 @@ snap alias microk8s.kubectl kubectl
 ```
 microk8s.disable dashboard dns
 ```
+check:
 
+```
+kubectl cluster-info
+```
 
 
 ```
