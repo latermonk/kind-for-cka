@@ -19,7 +19,9 @@ microk8s.status --wait-ready
 ### alias
 
 ```
-snap unalias kubectl
+
+snap alias microk8s.kubectl kubectl
+
 ```
 
 ### DNS plugin
