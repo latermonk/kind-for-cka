@@ -24,7 +24,7 @@ snap alias microk8s.kubectl kubectl
 
 ```
 
-### DNS plugin
+### add plugin
 
 ```
 microk8s.disable dashboard dns
