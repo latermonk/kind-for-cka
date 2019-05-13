@@ -27,9 +27,9 @@ snap alias microk8s.kubectl kubectl
 ### add plugin
 
 ```
-microk8s.disable dashboard dns
+microk8s.enable  dashboard dns
 ```
-check:
+check cluster info:
 
 ```
 kubectl cluster-info
