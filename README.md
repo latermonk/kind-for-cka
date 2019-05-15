@@ -1,5 +1,10 @@
 # kind-for-cka
 
+## kind reference 
+
+https://kind.sigs.k8s.io/
+
+https://github.com/kubernetes-sigs/kind/
 
 # need more than 1 node ?
 
