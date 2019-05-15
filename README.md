@@ -6,6 +6,30 @@ https://kind.sigs.k8s.io/
 
 https://github.com/kubernetes-sigs/kind/
 
+
+#  kind binary 
+
+## open release page
+ https://github.com/kubernetes-sigs/kind/releases/
+
+## download binary
+
+
+```
+wget   xxx
+```
+
+
+```
+wget wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml
+```
+## create cluster
+
+```
+kind create cluster --config kind-example-config.yaml
+```
+
+
 # need more than 1 node ?
 
 
