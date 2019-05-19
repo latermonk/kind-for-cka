@@ -14,4 +14,19 @@ minikube start
 
 ```
 
+# Open  dashboard
+
+
+```
+minikube dashboard
+```
+
+	# ADDONS 
+
+
+```
+minikube addons enable heapster
+
+
+```
 
