@@ -16,9 +16,11 @@ https://github.com/kubernetes-sigs/kind/
 
 
 ```
+
+cd  /usr/local/bin     
 wget   https://github.com/kubernetes-sigs/kind/releases/download/0.2.1/kind-linux-amd64
 
-mv  ./kind-linux-amd64    /path-to-kind/kind
+mv  kind-linux-amd64    kind
 
 chmod +x  /path-to-kind/kind
 ```
