@@ -25,7 +25,7 @@ chmod +x  /path-to-kind/kind
 
 
 ```
-wget wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml
+wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml
 ```
 ## create cluster
 
